@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .one{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#fadein").click(function(){
+                $(".one").fadeIn("slow");
+            })
+
+            $("#fadeout").click(function(){
+                $(".one").fadeOut("slow");
+            })
+
+            $("#fadetoggle").click(function(){
+                $(".one").fadeToggle("slow");
+            })
+        })
+    </script>
+    <button id="fadein">Fade in</button>
+    <button id="fadeout">Fade out</button>
+    <button id="fadetoggle">Fade Toggle</button>
+
+    <div class="one">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus tenetur expedita asperiores. Cum autem asperiores eveniet iusto amet ullam nulla aut laudantium vero architecto accusantium reprehenderit, aspernatur dolor, quod possimus!lorem50 Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem, architecto placeat quo veniam nesciunt error sunt blanditiis quos, assumenda voluptas autem ea laborum alias veritatis quasi et quas tempora? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sit architecto beatae voluptate dicta aperiam suscipit saepe molestiae harum! Excepturi at labore eligendi natus illo aliquam pariatur, voluptatem laborum, debitis repellendus impedit, quo non quas ex sapiente nam. Amet, perspiciatis!
+
+        </p>
+    </div>
+     
+</body>
+</html>
