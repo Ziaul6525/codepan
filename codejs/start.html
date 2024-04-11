@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <title>animation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+           $("#animation").click(function(){
+            $(".two").animate({
+             left : '700',
+             opacity : '0.5',
+             width : '500px',
+             height : '500px',
+            },10000);
+
+            $("#stopanimation").click(function(){
+                $(".two").stop();
+            });
+
+           });
+        });
+    </script>
+
+    <button id="animation">Start</button>
+    <button id="stopanimation">Stop</button>
+    <div class="one">
+        <div class="two"></div>
+    </div>
+    
+</body>
+</html>
