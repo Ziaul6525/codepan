@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">          
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- JavaScript Emai/email varification -->
+    <form name = "formname" onsubmit = "return zero()">
+    Name     : <input type="text" name="name"><br><br>
+    Password : <input type="password" name="password";><br>
+           <input type="submit" value="submit">
+  </form>
+  <script>
+      function zero(){
+        var name = document.formname.name.value;
+        var password = document.formname.password.value;
+        if(name == null || name == ""){
+          alert("Please input your name & password");
+          return false;
+        }else if(password.length<8){
+          alert("password must be at list 8 characters.");
+          return false;
+        }else{
+          document.write("Thanks, your form has been submitted")
+        }
+       }      
+    </script>
+
+	 <script src="./myscript.js"></script>
+</body>
+</html>
